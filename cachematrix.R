@@ -3,17 +3,17 @@
 ## Create a matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-	m <- Null
+	m <- NULL
 	set <- function(y){
 		x <<- y
-		m <<- Null
+		m <<- NULL
 	}
 	get <- function()x
-	setinverse <- function(inverse)m <<- inverse
-	getinverse <- function()m
+	setinverse <- function(inverse) m <<- inverse
+	getinverse <- function() m
 	list(set = set, get = get,
-	setinverse = setinverse,
-	getinverse = getinverse)
+		setinverse = setinverse,
+		getinverse = getinverse)cache
 }
 
 
